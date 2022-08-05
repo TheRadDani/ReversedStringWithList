@@ -5,7 +5,7 @@ using namespace std;
 
 struct Node
 {
-    int value;
+    char value;
     Node *next;
 };
 
@@ -43,7 +43,7 @@ void reverse(Node** head){
 }
 
 
-void push(Node **head, int value)
+void push(Node **head, const char * value)
 {
 
 
@@ -51,7 +51,7 @@ void push(Node **head, int value)
 
 
     Node *temp = new Node();
-    temp->value = value;
+    temp->value = *value;
     temp->next = NULL;
 
 
@@ -88,9 +88,11 @@ int main(){
     Node *head = NULL;
 
 
-    push(&head, 1);
-    push(&head, 2);
-    push(&head, 3);
+    push(&head, "H");
+    push(&head, "o");
+    push(&head, "l");
+    push(&head, "a");
+    
 
 
     print(head);
