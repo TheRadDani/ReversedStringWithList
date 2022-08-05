@@ -89,9 +89,10 @@ int main(){
 
 
     push(&head, "H");
-    push(&head, "o");
+    push(&head, "e");
     push(&head, "l");
-    push(&head, "a");
+    push(&head, "l");
+    push(&head, "o");
     
 
 
